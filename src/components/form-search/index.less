@@ -1,0 +1,32 @@
+.m-form-search {
+    padding: 24px 24px 0;
+    background: #FFF;
+    border-radius: 4px;
+
+    // 去掉.ant-col .ant-form-item-control-input 下的相对定位属性 防折叠模式下 overflow:hidden  遮住绝对定位的日期组件选择框（从absolute至上层定位元素之间会形成包装块）
+    // .ant-col {
+    //     position: static;
+    // }
+
+    // .ant-form-item-control-input {
+    //     position: static;
+    // }
+    &-content {
+        .m-form {
+            flex: 1;
+        }
+    }
+
+    .ant-picker {
+        width: 100%;
+    }
+
+    .ant-select {
+        .ant-select-selector {
+            .ant-select-selection-overflow {
+                flex-wrap: nowrap;
+                overflow: auto;
+            }
+        }
+    }
+}

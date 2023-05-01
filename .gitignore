@@ -1,0 +1,20 @@
+#dependencies
+node_modules
+build
+
+# output
+stats.json
+
+# log files
+yarn-error.log
+npm-debug.log
+
+# webstorm
+.idea/
+.DS_Store
+
+#cache file
+dev
+
+# label-web-tool-feature-2.1
+label-web-tool-feature-2.1
