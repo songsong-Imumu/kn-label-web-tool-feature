@@ -14,6 +14,7 @@ export default function TripleData(props) {
   );
 
   useEffect(() => {
+    console.log(data)
     dispatch({ page: 1, size: Infinity, fileType: 'RELATION_CORPUS', status: 'NO_CONVERT' });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

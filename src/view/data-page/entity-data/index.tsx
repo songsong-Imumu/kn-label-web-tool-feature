@@ -8,7 +8,7 @@ import './index.less';
 
 export default function ToolData(props) {
   const { data, dispatch, isLoading: loading } = useFetch(getFileData, { page: 1, size: Infinity, fileType: 'ENTITY_CORPUS' }, false);
-
+  console.log(data);
   useEffect(() => {
     dispatch({ page: 1, size: Infinity, fileType: 'ENTITY_CORPUS' });
     // eslint-disable-next-line react-hooks/exhaustive-deps

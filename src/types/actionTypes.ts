@@ -1,6 +1,7 @@
 /**
  * 请求地址
  */
+// export const PATH = 'http://39.184.210.84:8080'
 export const PATH = 'http://101.35.15.228:8080'
 // export const PATH = 'http://localhost:8080'
 

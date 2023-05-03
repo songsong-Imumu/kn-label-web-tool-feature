@@ -144,6 +144,29 @@ const MENU_MAP: MenuItemType[] = [
             link: '/app/graph/page'
           }
         ]
+      },
+      {
+        id: 65,
+        auth: [1, 2],
+        name: '定值清册',
+        parentId: 6,
+        link: '/app/dzqc',
+        children: [
+          {
+            id: 651,
+            auth: [1, 2],
+            name: '构建',
+            parentId: 65,
+            link: '/app/dzqc/relation?type=DZQC_CORPUS'
+          },
+          {
+            id: 650,
+            auth: [1, 2],
+            name: '预览',
+            parentId: 65,
+            link: '/app/dzqc/page'
+          }
+        ]
       }
     ]
   },
@@ -189,6 +212,13 @@ const MENU_MAP: MenuItemType[] = [
         parentId: 5,
         name: '设备树数据',
         link: '/app/data/device'
+      },
+      {
+        id: 55,
+        auth: [1, 2],
+        parentId: 5,
+        name: '定值清册数据',
+        link: '/app/data/dzqc'
       }
     ]
   },

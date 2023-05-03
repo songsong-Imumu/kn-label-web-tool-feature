@@ -25,6 +25,7 @@ module.exports = {
 
         '/mock/test': {
             target: 'http://101.35.15.228:80',
+            // target:'http://39.184.210.84:80',
             secure: false,
             pathRewrite: {
                 '^/mock/test': ''

@@ -81,7 +81,12 @@ export const urlObj = {
     component: load(() => import('@/view/data-page/device-data')),
     auth: [1, 2]
   },
-
+  DzqcData: {
+    name: '定值清册数据',
+    link: '/app/data/dzqc',
+    component: load(() => import('@/view/data-page/dzqc-data')),
+    auth: [1, 2]
+  },
   DeviceTree: {
     name: '设备树数据',
     link: '/app/device/tree',
@@ -93,6 +98,12 @@ export const urlObj = {
     name: '图谱',
     link: '/app/graph/page',
     component: load(() => import('@/view/use-page/graph-page')),
+    auth: [1, 2]
+  },
+  DzqcPage: {
+    name: '定值清册',
+    link: '/app/dzqc/page',
+    component: load(() => import('@/view/use-page/dzqc-page')),
     auth: [1, 2]
   },
 
@@ -128,11 +139,13 @@ const {
   EntityData,
   TripleData,
   DeviceData,
+  DzqcData,
   GraphPage,
   HighSearch,
   HighFault,
   HighExpert,
   DeviceTree,
+  DzqcPage,
   GraphRelation,
   Auth
 } = urlObj;
@@ -146,11 +159,13 @@ export const routes = [
   EntityData,
   TripleData,
   DeviceData,
+  DzqcData,
   GraphPage,
   HighSearch,
   HighFault,
   HighExpert,
   DeviceTree,
+  DzqcPage,
   GraphRelation,
   Login,
   Auth
